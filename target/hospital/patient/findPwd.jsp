@@ -151,12 +151,12 @@
                     class="form-control input-control clearfix"
                     required />
             </div>
-<%--            <div class="form-group col-xs-12">--%>
-<%--                <label class="sr-only" for="userid">身份证号</label>身份证号(*):<input--%>
-<%--                    style="font-weight: bold" type="text" name="uid"--%>
-<%--                    id="userid" class="form-control input-control clearfix"--%>
-<%--                    required onkeyup="isCheckUserid()" /><span id="emailTip"></span>--%>
-<%--            </div>--%>
+            <div class="form-group col-xs-12">
+                <label class="sr-only" for="identityCardLastSix">身份证号后六位</label>身份证号后六位(*):<input
+                    style="font-weight: bold" type="text" name="identityCardLastSix"
+                    id="identityCardLastSix" class="form-control input-control clearfix"
+                    required />
+            </div>
             <div class="form-group col-xs-12">
                 <label class="sr-only" for="pwd1">密码</label>密码(*):<input
                     style="font-weight: bold" type="password" name="password"
@@ -178,34 +178,6 @@
     </div>
 
     <script>
-        <%--function isCheckUserid() {--%>
-        <%--    var userid = document.getElementById("userid").value;--%>
-        <%--    document.getElementById("errorTip").innerHTML = "";--%>
-        <%--    if (userid != "") {--%>
-        <%--        var reg = /^[1-9]\d{5}(18|19|20\d{2})((0[1-9])|(1[0-2]))(([0-2][1-9])|(10|20|30|31))\d{3}[\dXx]$/;--%>
-        <%--        var isok = reg.test(userid);--%>
-        <%--        if (isok) {--%>
-        <%--            // 假设 currentUID 是服务器端传递的当前用户的身份证号--%>
-        <%--            var currentUID = "${currentUID}";--%>
-        <%--            if (userid === currentUID) {--%>
-        <%--                document.getElementById("emailTip").innerHTML = "身份证号格式正确";--%>
-        <%--                document.getElementById("btn").disabled = false;--%>
-        <%--            } else {--%>
-        <%--                document.getElementById("emailTip").innerHTML = "身份证号不匹配";--%>
-        <%--                document.getElementById("btn").disabled = true;--%>
-        <%--            }--%>
-        <%--            return true;--%>
-        <%--        } else {--%>
-        <%--            document.getElementById("btn").disabled = true;--%>
-        <%--            document.getElementById("emailTip").innerHTML = "身份证号格式不正确";--%>
-        <%--            return false;--%>
-        <%--        }--%>
-        <%--    } else {--%>
-        <%--        document.getElementById("emailTip").innerHTML = "";--%>
-        <%--        return false;--%>
-        <%--    }--%>
-        <%--}--%>
-
         function isCheckPwd() {
             var pwd1 = document.getElementById("pwd1").value;
             var pwd2 = document.getElementById("pwd2").value;

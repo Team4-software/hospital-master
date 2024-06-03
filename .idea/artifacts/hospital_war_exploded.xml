@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="hospital:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/hospital_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/hospital</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>hospital</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -15,6 +22,9 @@
           <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.6" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/hospital/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="hospital/web/Web" />
     </root>

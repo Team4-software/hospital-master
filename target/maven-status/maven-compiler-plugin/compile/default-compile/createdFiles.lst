@@ -20,13 +20,11 @@ bean\Admin.class
 servlet\QueryNumSource.class
 servlet\admin\ScheduleManage.class
 bean\Integrity.class
-servlet\SendMail.class
 servlet\Logout.class
 dao\OfficeDao.class
 servlet\patient\DoctorSearch.class
 servlet\patient\Register.class
 util\DBUtil.class
-servlet\SendMail$1.class
 bean\Recode.class
 dao\RoomDao.class
 servlet\Count.class
@@ -41,7 +39,6 @@ servlet\patient\ShowWorkday.class
 dao\AdminDao.class
 dao\PatientDao.class
 dao\IntegrityDao.class
-servlet\SendMail$2.class
 bean\WorkDay.class
 util\Util.class
 dao\WorkDayDao.class

@@ -19,7 +19,7 @@ public class PatientDao {
     public boolean insert(Patient patient){
         String sql="insert into patient values(null,?,?,?,?,?)";
         return DBUtil.executeUpdate(sql,new Object[]{patient.getAccount(),
-                patient.getEmail(),
+                patient.getIdentityCard(),
                 patient.getPassword(),
                 patient.getName(),
                 patient.getIntegrity()});
