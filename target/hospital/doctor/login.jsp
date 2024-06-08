@@ -5,7 +5,8 @@
     <jsp:include page="include/headtag.jsp"/>
     <style>
         body{
-            background-image: url("<%=request.getContextPath()%>/images/1.jpg");
+            <%--background-image: url("<%=request.getContextPath()%>/images/1.jpg");--%>
+            background: #000000;
             background-size: 100%;
             text-align: center;
         }

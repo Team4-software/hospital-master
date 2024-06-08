@@ -16,8 +16,8 @@
 <body>
 <h1>Welcome to the Role Selection Menu</h1>
 <ul>
-    <li><a href="<%=request.getContextPath()%>/admin/index.jsp">管理员登录</a></li>
-    <li><a href="<%=request.getContextPath()%>/doctor/index.jsp">医生登录</a></li>
+    <li><a href="<%=request.getContextPath()%>/admin/login.jsp">管理员登录</a></li>
+    <li><a href="<%=request.getContextPath()%>/doctor/login.jsp">医生登录</a></li>
     <li><a href="<%=request.getContextPath()%>/patient/index.jsp">用户登录</a></li>
 </ul>
 </body>

@@ -5,7 +5,8 @@
     <jsp:include page="include/headtag.jsp"/>
     <style>
         body{
-            background-image: url("../images/1.jpg");
+            /*background-image: url("../images/1.jpg");*/
+            background: #000000;
             background-size: 100%;
             text-align: center;
         }
@@ -162,8 +163,7 @@
                 <button type="submit" class="btn" wid="btn">立即登录</button>
             </div>
         </form>
-        <span><a href="<%=request.getContextPath()%>/patient/findPwd.jsp">找回密码</a></span> <span><a
-            href="<%=request.getContextPath()%>/patient/register.jsp" class="pull-right">用户注册</a></span>
+        <span><a href="<%=request.getContextPath()%>/patient/register.jsp" class="pull-right">用户注册</a></span>
     </div>
 
 </div>
