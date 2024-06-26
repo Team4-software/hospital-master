@@ -10,49 +10,60 @@
             text-align: center;
         }
         .form-box{
-            margin: 0 auto;
-            width: 550px;
-            color: #fff;
+            margin: 100px auto;
+            width: 500px;
+            color: #2e2e2e;
+            height: 700px; /* 修改高度为650px */
+            background: #fff;
+            position: relative; /* 确保子元素能够绝对定位 */
         }
         .form-box a{
-            color: #de615e;
+            color: #129CD1;
             text-decoration: none;
         }
         .form-top {
             overflow: hidden;
             padding: 0 25px 15px 25px;
-            background: #444;
-            background: rgba(0, 0, 0, 0.35);
+            background: #fff;
             -moz-border-radius: 4px 4px 0 0;
             -webkit-border-radius: 4px 4px 0 0;
             border-radius: 4px 4px 0 0;
-            text-align: left;
+            text-align: center;
+            position: relative; /* 确保子元素能够绝对定位 */
         }
         .form-bottom {
             padding: 25px 25px 30px 25px;
-            background: #444;
-            background: rgba(0, 0, 0, 0.3);
+            background: #fff;
             -moz-border-radius: 0 0 4px 4px;
             -webkit-border-radius: 0 0 4px 4px;
             border-radius: 0 0 4px 4px;
             text-align: left;
+            height: 300px; /* 设置固定高度为300像素 */
         }
         .form-top-left {
-            float: left;
-            width: 75%;
+            width: 100%;
             padding-top: 25px;
+            text-align: center; /* 标题居中 */
         }
         .form-top-left h3 {
             margin-top: 0;
-            color: #969696;
+            color: #129CD1;
+            border-bottom: 2px solid #129CD1; /* 添加下划线 */
+            padding-bottom: 5px; /* 添加一些内边距以调整下划线和文本之间的距离 */
+            display: inline-block; /* 使下划线根据文本长度 */
         }
         .form-top-left p {
             opacity: 0.8;
-            color: #fff;
+            color: #2e2e2e;
+            text-align: left; /* 文字左对齐 */
+            margin-top: 10px; /* 添加一些内边距使其与标题分开 */
+            font-size: 20px; /* 增大字体 */
+            font-weight: bold; /* 加粗字体 */
         }
 
         .text-danger {
-            color: #b94a48;
+            color: #c9302c;
+            font-weight: bold;
         }
         .form-group {
             margin-bottom: 15px;
@@ -88,7 +99,7 @@
             font-size: 16px;
             font-weight: 300;
             line-height: 50px;
-            color: #888;
+            color:#2e2e2e;
             -moz-border-radius: 4px;
             -webkit-border-radius: 4px;
             border-radius: 4px;
@@ -107,7 +118,7 @@
             margin: 0;
             padding: 0 20px;
             vertical-align: middle;
-            background: #de615e;
+            background: #129CD1;
             border: 0;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
@@ -129,13 +140,18 @@
         .pull-right{
             float: right;
         }
+        .pull-right-top {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="form-box">
     <div class="form-top">
         <div class="form-top-left">
-            <h3 style="color: #969696;">用户注册</h3>
+            <h3>用户注册</h3>
             <p>请输入注册信息</p>
         </div>
         <div class="pull-right-bottom">

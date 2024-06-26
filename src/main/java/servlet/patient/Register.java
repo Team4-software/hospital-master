@@ -31,7 +31,7 @@ public class Register extends HttpServlet {
                     Patient patient=new Patient(null,account,email,password,name,"100");
                     if(patientDao.insert(patient)){
                         message="注册成功，请登录！";
-                        req.getSession().setAttribute("message",message);
+                        req.getSession().setAttribute("s_message",message);
                         resp.sendRedirect("login.jsp");
                         return;
                     }else {

@@ -40,7 +40,7 @@ public class FindPwd extends HttpServlet {
                         String set = "set password=? where pid=?";
                         if (patientDao.update(set, new Object[]{password, patient.getId()})) {
                             message = "密码修改成功，请登录！";
-                            req.setAttribute("message", message);
+                            req.setAttribute("s_message", message);
                             req.getRequestDispatcher("login.jsp").forward(req, resp);
                             return;
                         } else {
@@ -50,7 +50,7 @@ public class FindPwd extends HttpServlet {
                         message = "两次密码不一致！";
                     }
             } else {
-                message = "身份证后六位不正确！"+identityCardLastSix;
+                message = "身份证后六位不正确！";
             }
         } else {
             message = "账号不存在!";
