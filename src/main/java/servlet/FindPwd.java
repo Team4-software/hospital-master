@@ -2,7 +2,6 @@ package servlet;
 
 import bean.Patient;
 import dao.PatientDao;
-import util.MyMail;
 import util.Util;
 
 import javax.servlet.ServletException;
@@ -12,8 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 @WebServlet("/patient/findPwd")
 public class FindPwd extends HttpServlet {
