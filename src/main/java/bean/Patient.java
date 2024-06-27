@@ -9,7 +9,7 @@ public class Patient{
     integrity.jsp tinyint);*/
     private String id;
     private String account;
-    private String email;
+    private String identityCardLastSix;
     private String password;
     private String name;
     private String integrity;
@@ -17,10 +17,10 @@ public class Patient{
     public Patient() {
     }
 
-    public Patient(String id, String account, String email, String password, String name, String integrity) {
+    public Patient(String id, String account, String identityCardLastSix, String password, String name, String integrity) {
         this.id = id;
         this.account = account;
-        this.email = email;
+        this.identityCardLastSix = identityCardLastSix;
         this.password = password;
         this.name = name;
         this.integrity = integrity;
@@ -42,12 +42,12 @@ public class Patient{
         this.account = account;
     }
 
-    public String getEmail() {
-        return email;
+    public String getIdentityCard() {
+        return identityCardLastSix;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String identityCardLastSix) {
+        this.identityCardLastSix = identityCardLastSix;
     }
 
     public String getPassword() {

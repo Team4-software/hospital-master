@@ -69,6 +69,7 @@
                         left: 480px;
                         width: 100px;
                         height: 125px;
+                        margin-top: 10px; /* 与页面上方留出空隙 */
                     }
                     .ysjs .title .t .gender{
                         color:rgb(95, 156, 236);

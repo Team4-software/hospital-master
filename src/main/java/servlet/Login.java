@@ -60,13 +60,13 @@ public class Login extends HttpServlet {
                         req.getSession().setAttribute("patient",patient);
                         String url= (String) req.getSession().getAttribute("url");
                         if(url==null)
-                            url="index.jsp";
+                            url="patient/index.jsp";
                         resp.sendRedirect(url);
                         return;
                     }
                 }
                 req.getSession().setAttribute("message","用户名或密码错误！！");
-                resp.sendRedirect("login.jsp");
+                resp.sendRedirect("patient/login.jsp");
                 break;
         }
     }

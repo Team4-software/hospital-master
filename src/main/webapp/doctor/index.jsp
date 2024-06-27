@@ -6,28 +6,7 @@
 </head>
 <body>
 <jsp:include page="include/head.jsp"/>
-<%--<jsp:include page="include/menu.jsp"/>--%>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>在线预约挂号系统</h1>
-        </div>
-    </div>
-    <div class="row">
-        <ul class="list-group">
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/doctor/myWork">排班信息</a></li>
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/doctor/myApply">我的申请</a></li>
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/doctor/patientList">患者队列</a></li>
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/doctor/myInfo">我的信息</a></li>
-            <!-- <li><a class="list-group-item1" href="/ssm_pro/orderIndex">快速预约</a></li> -->
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/doctor/modifyPwd.jsp">修改密码</a></li>
-        </ul>
-    </div>
-</div>
-
-
+<jsp:include page="include/lead.jsp"/>
 
 <%--<div style="margin-top: 65px;margin-left: 300px">--%>
 <%--    <div id="page-inner">--%>
