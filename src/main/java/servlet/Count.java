@@ -64,6 +64,15 @@ public class Count extends HttpServlet {
                     array.put(rs.getInt(2));
                 }
                 break;
+            case "4":
+                sql="SELECT worktime, COUNT(did) FROM workday " +
+                        "WHERE state = '预约'" +
+                        "GROUP BY worktime ORDER BY worktime";
+                rs=DBUtil.executeQuery(sql,null);
+                while (rs.next()){
+                    array.put(rs.getInt(2));
+                }
+                break;
         }
         } catch (SQLException e) {
             e.printStackTrace();

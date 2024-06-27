@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea5440cb-4c9d-46ec-a380-0735d44a4b41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean/Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/DoctorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/DoctorDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IntegrityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IntegrityDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/NumSourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/NumSourceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/OfficeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/OfficeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/PatientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/PatientDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/RecodeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/RecodeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/RoomDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/RoomDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/WorkDayDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/WorkDayDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/IAdminimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/IAdminimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/filter/MyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/MyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/Count.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/Count.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/FindPwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/FindPwd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ModifyPwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ModifyPwd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QueryDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/QueryDoctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/QueryNumSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/QueryNumSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SendMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SendMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ApplyManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ApplyManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/DoctorManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/DoctorManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/OfficeDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/OfficeDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/OfficeManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/OfficeManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RoomManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RoomManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ScheduleManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ScheduleManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/doctor/ApplyWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/doctor/ApplyWork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/doctor/MyApply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/doctor/MyApply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/doctor/MyInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/doctor/MyInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/doctor/MyWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/doctor/MyWork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/doctor/PatientList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/doctor/PatientList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/patient/DoctorSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/patient/DoctorSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/patient/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/patient/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/patient/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/patient/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/patient/ShowWorkday.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/patient/ShowWorkday.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/MyMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/MyMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hospital.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/hospital.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2iRh6UAUGDX3KzzWS2JVz9oJCxI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/mac/Library/Mobile Documents/com~apple~CloudDocs/share/new_hospital/hospital-master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea5440cb-4c9d-46ec-a380-0735d44a4b41" name="Changes" comment="" />
+      <created>1719459124049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719459124049</updated>
+      <workItem from="1719459125867" duration="96000" />
+      <workItem from="1719459228317" duration="10000" />
+      <workItem from="1719459249312" duration="15000" />
+      <workItem from="1719459311154" duration="2995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
