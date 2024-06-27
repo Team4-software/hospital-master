@@ -5,52 +5,47 @@
     <title>在线预约挂号系统（管理员）菜单</title>
     <style>
         body {
-            background-color: #fff;
-            color: #333;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            background-color: #fff; /* 背景颜色 */
+            color: #129CD1; /* 文字颜色 */
+            font-family: Arial, sans-serif; /* 字体 */
+            text-align: center; /* 文本居中 */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 高度100视口高度 */
+            margin: 0; /* 去除默认外边距 */
         }
         .menu-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-            width: 80%;
+            display: grid; /* 使用网格布局 */
+            grid-template-columns: repeat(3, 1fr); /* 三列均分 */
+            gap: 20px; /* 网格间距 */
+            padding: 20px; /* 内边距 */
+            width: 80%; /* 宽度80% */
         }
         .menu-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #129CD1;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .menu-item img {
-            width: 100px;  /* 图标宽度 */
-            height: 100px; /* 图标高度 */
-            margin-bottom: 10px;
-            border-radius: 10px;
+            width: 300px; /* 图标宽度 */
+            height: 200px; /* 图标高度 */
+            margin-bottom: 10px; /* 下外边距 */
+            /* 去掉图片的圆角边框 */
         }
         .menu-item a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: #333;
-            padding: 10px 0;
-            width: 100%; /* 链接宽度与图标宽度一致 */
-            border-radius: 0 0 10px 10px;
-            transition: background-color 0.3s;
+            text-decoration: none; /* 去除下划线 */
+            color: #fff; /* 文字颜色 */
+            font-size: 18px; /* 字体大小 */
+            font-weight: bold; /* 字体加粗 */
+            background-color: #129CD1; /* 背景颜色 */
+            padding: 10px 0; /* 上下内边距 */
+            width: 300px; /* 链接宽度与图标宽度一致 */
+            border-radius: 0 0 10px 10px; /* 底部圆角 */
+            transition: background-color 0.3s; /* 背景颜色过渡效果 */
         }
         .menu-item a:hover {
-            background-color: #1abc9c;
+            background-color: #1abc9c; /* 悬停背景颜色 */
         }
     </style>
 </head>
@@ -77,7 +72,7 @@
         <a href="<%=request.getContextPath()%>/admin/applyManage">排班申请管理</a>
     </div>
     <div class="menu-item">
-        <img src="<%=request.getContextPath()%>/images/modifyPwd.png" alt="Modify Password Icon">
+        <img src="<%=request.getContextPath()%>/images/image2.png" alt="Modify Password Icon">
         <a href="<%=request.getContextPath()%>/admin/modifyPwd.jsp">修改个人密码</a>
     </div>
     <div class="menu-item">

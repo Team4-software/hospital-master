@@ -26,9 +26,9 @@ public class Count extends HttpServlet {
         String sql;
         resp.setContentType("application/json; charset=utf-8");
         try {
-        switch (action){
-            case "1":
-                rs = DBUtil.executeQuery("select count(*) from office", null);
+            switch (action){
+                case "1":
+                    rs = DBUtil.executeQuery("select count(*) from office", null);
 
                     rs.next();
                     array.put(rs.getInt(1));
@@ -42,29 +42,38 @@ public class Count extends HttpServlet {
                     rs.next();
                     array.put(rs.getInt(1));
 
-                break;
-            case "2":
-                sql="select doctor.office,count(doctor.did) as did from recode,doctor where recode.did=doctor.did group by doctor.office ";
-                rs=DBUtil.executeQuery(sql,null);
-                JSONArray data = new JSONArray();
-                JSONArray data1 = new JSONArray();
-                while (rs.next()){
-                    data.put(rs.getString(1));
-                    data1.put(rs.getString(2));
-                }
-                JSONObject object=new JSONObject();
-                object.put("data",data);
-                object.put("data1",data1);
-                resp.getWriter().write(object.toString());
-                return;
-            case "3":
-                sql="select workday.worktime,count(recode.did) from recode,workday where workday.wid=recode.wid group by workday.worktime order by workday.worktime";
-                rs=DBUtil.executeQuery(sql,null);
-                while (rs.next()){
-                    array.put(rs.getInt(2));
-                }
-                break;
-        }
+                    break;
+                case "2":
+                    sql="select doctor.office,count(doctor.did) as did from recode,doctor where recode.did=doctor.did group by doctor.office ";
+                    rs=DBUtil.executeQuery(sql,null);
+                    JSONArray data = new JSONArray();
+                    JSONArray data1 = new JSONArray();
+                    while (rs.next()){
+                        data.put(rs.getString(1));
+                        data1.put(rs.getString(2));
+                    }
+                    JSONObject object=new JSONObject();
+                    object.put("data",data);
+                    object.put("data1",data1);
+                    resp.getWriter().write(object.toString());
+                    return;
+                case "3":
+                    sql="select workday.worktime,count(recode.did) from recode,workday where workday.wid=recode.wid group by workday.worktime order by workday.worktime";
+                    rs=DBUtil.executeQuery(sql,null);
+                    while (rs.next()){
+                        array.put(rs.getInt(2));
+                    }
+                    break;
+                case "4":
+                    sql="SELECT worktime, COUNT(did) FROM workday " +
+                            "WHERE state = '预约'" +
+                            "GROUP BY worktime ORDER BY worktime";
+                    rs=DBUtil.executeQuery(sql,null);
+                    while (rs.next()){
+                        array.put(rs.getInt(2));
+                    }
+                    break;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

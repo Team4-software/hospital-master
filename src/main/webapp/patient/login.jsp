@@ -135,7 +135,7 @@
 <div class="form-box">
     <div class="form-top">
         <div class="s-message" id="s_Tip">${s_message}</div>
-        <div class="form-top-left">
+        <div class="form-top-right">
             <h3>用户登录</h3>
             <p>请输入登录信息</p>
         </div>
@@ -144,7 +144,7 @@
         </div>
     </div>
     <div class="form-bottom">
-        <form role="form" action="<%=request.getContextPath()%>/login" method="post" class="login-form">
+        <form id="loginForm" role="form" action="<%=request.getContextPath()%>/login" method="post" class="login-form">
             <div class="form-group col-xs-12">
                 <label class="sr-only"></label>账号(*):<input
                     style="font-weight: bold" type="text" name="account"
@@ -161,8 +161,8 @@
                 <button type="submit" class="btn" id="btn">立即登录</button>
             </div>
         </form>
-        <span><a href="<%=request.getContextPath()%>/patient/findPwd.jsp">找回密码</a></span> <span><a
-            href="<%=request.getContextPath()%>/patient/register.jsp" class="pull-right">用户注册</a></span>
+        <span><a href="<%=request.getContextPath()%>/patient/findPwd.jsp" id="findPwdLink">找回密码</a></span> <span><a
+            href="<%=request.getContextPath()%>/patient/register.jsp" id="registerLink" class="pull-right">用户注册</a></span>
     </div>
 </div>
 <script>
@@ -170,20 +170,38 @@
         const errorTip = document.getElementById("errorTip");
         const sTip = document.getElementById("s_Tip");
         const inputs = document.querySelectorAll("input[type='text'], input[type='password']");
-
-        if (errorTip) {
-            errorTip.innerText = "";
-        }
-
         inputs.forEach(input => {
             input.addEventListener("input", () => {
                 if (errorTip) {
                     errorTip.innerText = "";
                 }
-                if (sTip) {
-                    sTip.innerText = "";
-                }
             });
+        });
+        const loginForm = document.getElementById("loginForm");
+        loginForm.addEventListener("submit", (event) => {
+            if (errorTip) {
+                errorTip.innerText = "";
+            }
+            if (sTip) {
+                sTip.innerText = "";
+            }
+        });
+        document.getElementById("findPwdLink").addEventListener("click", (event) => {
+            if (errorTip) {
+                errorTip.innerText = "";
+            }
+            if (sTip) {
+                sTip.innerText = "";
+            }
+        });
+
+        document.getElementById("registerLink").addEventListener("click", (event) => {
+            if (errorTip) {
+                errorTip.innerText = "";
+            }
+            if (sTip) {
+                sTip.innerText = "";
+            }
         });
     };
 </script>

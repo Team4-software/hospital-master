@@ -38,7 +38,7 @@
             color: #fff;
             font-size: 18px;
             font-weight: bold;
-            background-color: #333; /* 背景颜色 */
+            background-color: #129CD1; /* 背景颜色 */
             padding: 10px 0;
             width: 300px; /* 设置与图标相同的宽度 */
             border-radius: 0 0 10px 10px; /* 矩形下部的圆角处理 */

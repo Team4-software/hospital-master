@@ -178,10 +178,10 @@ CREATE TABLE `patient`  (
 -- ----------------------------
 -- Records of patient
 -- ----------------------------
-INSERT INTO `patient` VALUES (1, '123456', '208094973@qq.com', '111', '123456', 100);
-INSERT INTO `patient` VALUES (2, '1234567', '208094973@qq.com', '123456', '123456', 100);
-INSERT INTO `patient` VALUES (3, '12345', '208094973@qq.com', '123456', '123456', 100);
-INSERT INTO `patient` VALUES (4, '1', '208094973@qq.com', '1', '患者1', 90);
+INSERT INTO `patient` VALUES (1, '123456', '220882200102021112', '111', '123456', 100);
+INSERT INTO `patient` VALUES (2, '1234567', '211213200010109898', '123456', '123456', 100);
+INSERT INTO `patient` VALUES (3, '12345', '112324199909092212', '123456', '123456', 100);
+INSERT INTO `patient` VALUES (4, '1', '123213198806075454', '1', '患者1', 90);
 
 -- ----------------------------
 -- Table structure for recode
