@@ -23,7 +23,7 @@
                                href="<%=request.getContextPath()%>/logout"><strong>注销</strong></a>
                         </c:if>
 <%--                            <a class="navbar-brand1" style="font-size: 12px;" href=""><strong>帮助中心</strong></a>--%>
-                        <a class="navbar-brand1" style="font-size: 12px;"  href="<%=request.getContextPath()%>/doctor/help.jsp"><strong>帮助中心</strong></a>
+<%--                        <a class="navbar-brand1" style="font-size: 12px;"  href="<%=request.getContextPath()%>/doctor/help.jsp"><strong>帮助中心</strong></a>--%>
                     </div>
                 </li>
             </ul>
