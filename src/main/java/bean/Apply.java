@@ -20,14 +20,14 @@ public class Apply {
     private String request;
 
     public Apply(String aid, String did, String dname, String wid, String reason, String applyTime, String state,String request) {
-        this.aid = aid;
-        this.did = did;
-        this.dname = dname;
-        this.wid = wid;
-        this.reason = reason;
-        this.applyTime = applyTime;
-        this.state = state;
-        this.request = request;
+        this.aid = aid; //申请的唯一标识符
+        this.did = did; //医生的id
+        this.dname = dname; //医生的姓名
+        this.wid = wid; //工作日的标识符
+        this.reason = reason; //申请的原因
+        this.applyTime = applyTime; //申请的时间
+        this.state = state; //申请的状态
+        this.request = request; //请求的详细信息
     }
 
     public String getRequest() {

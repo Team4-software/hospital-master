@@ -56,7 +56,6 @@
 ![](screenshot/1.png)
 
 诚信度
-testing
 
 ![](screenshot/2.png)
 ![](screenshot/3.png)

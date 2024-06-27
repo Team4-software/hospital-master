@@ -1,20 +1,20 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     text-decoration: none;
 }
 .navbar1 {
     font-size: 18px;
     font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
     font-weight: 700;
-    background-color: #222;
+    background-color: #129CD1;
     top: 0;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030;
     height: 60px;
-    border: #000 2px solid;
+    border: #129CD1 2px solid;
 }
 .container1 {
     width: 1170px;
@@ -23,10 +23,9 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .navbar-brand1 {
     margin-left: -15px;
-    color: #9d9d9d;
+    color: #fff; /* 确保文字颜色为白色 */
     font-size: inherit;
     font-weight: 700;
     text-transform: uppercase;
@@ -36,7 +35,7 @@
     height: 60px;
 }
 .navbar-collapse1 {
-    border-color: #101010;
+    border-color: #129CD1;
     margin-right: 0;
     margin-left: 0;
     max-height: 340px;
@@ -57,11 +56,10 @@
     padding-left: 0;
     list-style: none;
 }
-
 .toggled1 {
     padding-left: 250px;
     width: 100%;
-    background: #202020;
+    background: #129CD1;
     display: flex;
 }
 #sidebar-wrapper1 {
@@ -72,7 +70,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #222222;
+    background: #129CD1;
     -webkit-transition: all 0.5s ease;
 }
 .sidebar-nav1 {
@@ -107,48 +105,13 @@
     color: #999999;
     text-align: center;
     position: relative;
-    display: block;
     padding: 10px 15px;
     margin-bottom: -1px;
-    background-color: #222222;
-    border: 1px solid #222222;
+    background-color: #129CD1;
+    border: 1px solid #129CD1;
 }
 .sidebar-nav1 li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

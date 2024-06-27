@@ -65,7 +65,7 @@ public class ModifyPwd extends HttpServlet {
                     message="密码错误";
                 }
                 req.setAttribute("message",message);
-                req.getRequestDispatcher("modifyPwd.jsp").forward(req,resp);
+                req.getRequestDispatcher("patient/modifyPwd.jsp").forward(req,resp);
                 break;
             case "admin":
                 Admin admin= (Admin) req.getSession().getAttribute("admin");

@@ -9,7 +9,7 @@
             <br />
             <br />
             <br />
-            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/admin/index.jsp"><font color="#fff">基本信息</font></a></li>
+            <li><a class="list-group-item1" href="<%=request.getContextPath()%>/admin/basicinfo.jsp"><font color="#fff">基本信息</font></a></li>
             <li><a class="list-group-item1" href="<%=request.getContextPath()%>/admin/doctorManage"><font color="#fff">医生信息管理</font></a></li>
             <li><a class="list-group-item1" href="<%=request.getContextPath()%>/admin/patientManage"><font color="#fff">患者信息管理</font></a></li>
             <!-- <li><a class="list-group-item1" href="/ssm_pro/orderIndex"><font color="#fff">快速预约</font></a></li> -->

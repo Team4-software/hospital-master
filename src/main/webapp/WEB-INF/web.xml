@@ -7,14 +7,4 @@
 
 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-<!--    <servlet>-->
-<!--        <servlet-name>LoginServlet</servlet-name>-->
-<!--        <servlet-class>servlet.Login</servlet-class> &lt;!&ndash; 修改为实际的类路径 &ndash;&gt;-->
-<!--    </servlet>-->
-
-<!--    &lt;!&ndash; 映射 LoginServlet 到 /login URL &ndash;&gt;-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>LoginServlet</servlet-name>-->
-<!--        <url-pattern>/login</url-pattern>-->
-<!--    </servlet-mapping>-->
 </web-app>

@@ -22,7 +22,7 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.List;
 
-@WebServlet("/order")
+@WebServlet("/patient/order")
 public class Order extends HttpServlet {
     private HttpServletRequest req;
     private HttpServletResponse resp;
@@ -44,15 +44,6 @@ public class Order extends HttpServlet {
         String data = Util.nullToString(req.getParameter("data"));//就诊序号
         String[] strings = data.split(",");
         switch (action) {
-            case "checkcode"://预约验证码
-                String codeConfirm = (String) req.getSession().getAttribute("codeConfirm");
-                //resp.setContentType("application/json; charset=utf-8");
-                if (checkcode.equals("123456") || checkcode.equals(codeConfirm)) {
-                    resp.getWriter().write("true");
-                } else {
-                    resp.getWriter().write("false");
-                }
-                break;
             case "order"://准备预约
                 NumSource numSource = new NumSource(strings[0], strings[1], strings[2], strings[3], wid);
                 //HashMap<String, String> hashMap = recodeDao.confirm(id);
@@ -72,25 +63,16 @@ public class Order extends HttpServlet {
                 break;
             case "alter"://修改预约
                 String set =" set serialnumber=? , visittime=? , ordertime=now() where rid=?";
-
                 System.out.println(recodeDao.update(set,new Object[]{strings[0],strings[3],rid}));
-                /*String sql = "update numsource set state='可预约' where id=?";//id,rid
-                DBUtil.executeUpdate(sql, new Object[]{wid});
-                sql = "update recode set nid=?, ordertime=now() where id=?";
-                DBUtil.executeUpdate(sql, new Object[]{wid, rid});*/
                 req.getRequestDispatcher("orderList").forward(req, resp);
                 break;
             case "cancel":
                 String set1 =" set state='取消' where rid=?";
                 recodeDao.update(set1,new Object[]{rid});
-                /*String sql = "update numsource set state='可预约' where id=?";//id,rid
-                DBUtil.executeUpdate(sql, new Object[]{wid});
-                sql = "update recode set nid=?, ordertime=now() where id=?";
-                DBUtil.executeUpdate(sql, new Object[]{wid, rid});*/
-
                 req.getRequestDispatcher("orderList").forward(req, resp);
                 break;
         }
+
 
 
     }
