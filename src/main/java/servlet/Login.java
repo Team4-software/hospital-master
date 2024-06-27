@@ -32,9 +32,15 @@ public class Login extends HttpServlet {
                     Admin admin = admins.get(0);
                     if(admin.getPassword().equals(password)){
                         req.getSession().setAttribute("admin",admin);
-                        resp.sendRedirect("admin/index.jsp");
+                        String url= (String) req.getSession().getAttribute("url");
+                        if(url==null)
+                            url="admin/index.jsp";
+                        resp.sendRedirect(url);
+                        return;
                     }
                 }
+                req.getSession().setAttribute("message","用户名或密码错误！！");
+                resp.sendRedirect("admin/login.jsp");
                 break;
             case "医生":
                 DoctorDao doctorDao=new DoctorDao();
@@ -44,12 +50,16 @@ public class Login extends HttpServlet {
                     Doctor doctor = doctors.get(0);
                     if(doctor.getPassword().equals(password)){
                         req.getSession().setAttribute("doctor",doctor);
-                        resp.sendRedirect("doctor");
+                        String url= (String) req.getSession().getAttribute("url");
+                        if(url==null)
+                            url="doctor/index.jsp";
+                        resp.sendRedirect(url);
                         return;
                     }
                 }
                 req.getSession().setAttribute("message","用户名或密码错误！！");
-                req.getRequestDispatcher("doctor/login.jsp").forward(req,resp);
+//                req.getRequestDispatcher("doctor/login.jsp").forward(req,resp);
+                resp.sendRedirect("doctor/login.jsp");
                 break;
             case "患者":
                 PatientDao patientDao=new PatientDao();
