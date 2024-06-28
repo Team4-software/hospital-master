@@ -114,9 +114,29 @@
             border-radius: 4px;
             transition: all .3s;
         }
+        .bottom-links {
+            text-align: center;
+            margin-top: 20px; /* 与表单内容保持一定间隔 */
+        }
+        .bottom-links a {
+            color: #129CD1;
+            text-decoration: none;
+            margin: 0 10px; /* 链接之间的间隔 */
+        }
+        .bottom-links a:hover {
+            text-decoration: underline;
+        }
         .pull-right {
             float: right;
         }
+        /*.center-link {*/
+        /*    width: 100%; !* 容器宽度设置为100% *!*/
+        /*    max-width: 1170px; !* 最大宽度限制 *!*/
+        /*    margin: auto; !* 水平自动边距 *!*/
+        /*    !* ... 其他样式保持不变 ... *!*/
+        /*    display: flex; !* 使子元素能够水平排列 *!*/
+        /*    justify-content: center; !* 居中按钮 *!*/
+        /*}*/
         .pull-right-top {
             position: absolute;
             top: 10px;
@@ -161,8 +181,11 @@
                 <button type="submit" class="btn" id="btn">立即登录</button>
             </div>
         </form>
-        <span><a href="<%=request.getContextPath()%>/patient/findPwd.jsp" id="findPwdLink">找回密码</a></span> <span><a
-            href="<%=request.getContextPath()%>/patient/register.jsp" id="registerLink" class="pull-right">用户注册</a></span>
+        <div class="bottom-links">
+            <a href="<%=request.getContextPath()%>/patient/findPwd.jsp" id="findPwdLink">找回密码</a>
+            <a href="<%=request.getContextPath()%>/">首页</a>
+            <a href="<%=request.getContextPath()%>/patient/register.jsp" id="registerLink">用户注册</a>
+        </div>
     </div>
 </div>
 <script>
@@ -174,6 +197,9 @@
             input.addEventListener("input", () => {
                 if (errorTip) {
                     errorTip.innerText = "";
+                }
+                if (sTip) {
+                    sTip.innerText = "";
                 }
             });
         });

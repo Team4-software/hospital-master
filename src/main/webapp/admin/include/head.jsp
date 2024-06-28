@@ -18,6 +18,7 @@
                             <jsp:forward page="../login.jsp"/>
                         </c:if>
                         <c:if test="${sessionScope.admin != null}">
+                            <a class="navbar-brand1" style="font-size: 12px;" href="<%=request.getContextPath()%>/"><strong>首页</strong></a>
                             <a class="navbar-brand1" style="font-size: 12px;" href=""><strong><font color="#fff">欢迎您,${sessionScope.admin["name"] }</font></strong></a>
                             <a class="navbar-brand1" style="font-size: 12px;"
                                href="<%=request.getContextPath()%>/logout"><strong>注销</strong></a>

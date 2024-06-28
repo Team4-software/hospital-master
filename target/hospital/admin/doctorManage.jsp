@@ -26,28 +26,28 @@
                 <button type="submit">查找医生</button>
             </form>
             <style>
-            .search{
-                height:180px;
-                border-bottom: 2px #2e2e2e solid;
-            }
-            .search input{
-                height: 40px;
-                width: 200px;
-                color: #2e2e2e;
-                padding: 0 20px;
-                border-radius: 4px;
-            }
-            .search button{
-                height: 40px;
-                color: #2e2e2e;
-                padding: 0 20px;
-                border-radius: 2px;
-                cursor: pointer;
-            }
-            .search button:hover{
-                color: #0065AF;
-            }
-        </style>
+                .search{
+                    height:180px;
+                    border-bottom: 2px #2e2e2e solid;
+                }
+                .search input{
+                    height: 40px;
+                    width: 200px;
+                    color: #2e2e2e;
+                    padding: 0 20px;
+                    border-radius: 4px;
+                }
+                .search button{
+                    height: 40px;
+                    color: #2e2e2e;
+                    padding: 0 20px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+                .search button:hover{
+                    color: #0065AF;
+                }
+            </style>
         </div>
 
         <div class="doctors">

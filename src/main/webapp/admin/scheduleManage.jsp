@@ -153,7 +153,7 @@
                     width: 100%;
                 }
                 .schedule .week .title1{
-                    font-size: 20px;
+                    font-size: 18px;
                 }
                 .schedule .week .title2{
                     width: 70%;
@@ -170,6 +170,8 @@
                 .ysjj img{
                     width: 30%;
                     float: left;
+                    margin-right: 10px; /* 留出头像与信息间的空隙 */
+                    margin-left: 10px; /* 头像与左侧边框的空隙 */
                 }
                 .ysjj .title{
                     float: left;
@@ -178,13 +180,13 @@
                 }
                 .ysjj .title span{
                     float: left;
-                    margin: 10px;
+                    margin: 5px;
                 }
                 .ysjj .title .name{
-                    font-size: 20px;
+                    font-size: 15px;
                 }
                 .ysjj .title .career{
-                    font-size: 17px;
+                    font-size: 15px;
                 }
                 .ysjj .title .gender{
                     font-size: 15px;
@@ -195,13 +197,14 @@
                     display: block;
                 }
                 .ysjj .title p{
-                    height: 150px;
+                    height: 140px;
                     width: 110%;
                     overflow-y: scroll;
                 }
                 .ysjj .work{
-                    float: left;
-                    width: 20%;
+                    float: right;
+                    width: 10%;
+                    font-size: 10px;
                 }
                 .ysjj .work div{
                     width: 100%;
@@ -216,7 +219,7 @@
                 .schedule .week .title2 ul{
                     float: left;
                     height: 100%;
-                    width: 14.2%;
+                    width: 14.27%;
                 }
                 .schedule .week .title2 ul li{
                     list-style: none;
