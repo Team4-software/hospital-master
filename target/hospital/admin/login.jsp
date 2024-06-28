@@ -308,10 +308,6 @@
             <h3>管理员登录-在线预约挂号系统后台管理</h3>
             <p>请输入登录信息</p>
         </div>
-        <div class="pull-right-bottom">
-            <p class="text-danger"
-               id="errorTip">${message}</p>
-        </div>
     </div>
     <div class="form-bottom">
         <form role="form" action="<%=request.getContextPath()%>/login" method="post" class="login-form">

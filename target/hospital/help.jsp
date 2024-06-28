@@ -43,7 +43,7 @@
                         帐号指南 <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#howlogin" data-toggle="tab">如何登陆</a></li>
+                        <li><a href="#howlogin" data-toggle="tab">如何登录</a></li>
                     </ul>
                 </li>
             </ul>
@@ -118,7 +118,7 @@
                     <h4>2、选择挂号医生</h4>
                     <p>选择您要预约的医生。</p>
                     <p align="center">
-                        <img src="/images/help/2.png">
+                        <img src="images/help/2.png">
                     </p>
                     <h4>3、选择挂号时间</h4>
                     <p>选择您要预约的时间。</p>

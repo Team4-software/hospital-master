@@ -112,6 +112,7 @@
                     left: 480px;
                     width: 100px;
                     height: 125px;
+                    margin-top: 5px;
                 }
                 .ysjs .title .t .gender{
                     color:rgb(95, 156, 236);

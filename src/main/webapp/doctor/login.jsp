@@ -134,13 +134,13 @@
 <body>
 <div class="form-box">
     <div class="form-top">
-        <div class="s-message" id="s_Tip">${s_message}</div>
+        <div class="s-message" id="s_Tip">${s_message=''}</div>
         <div class="form-top-left">
             <h3>医生登录</h3>
             <p>请输入登录信息</p>
         </div>
         <div class="pull-right-bottom">
-            <p class="text-danger" id="errorTip">${message}</p>
+            <p class="text-danger" id="errorTip">${d_message}</p>
         </div>
 
     </div>

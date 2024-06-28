@@ -39,7 +39,7 @@ public class Login extends HttpServlet {
                         return;
                     }
                 }
-                req.getSession().setAttribute("message","用户名或密码错误！！");
+                req.getSession().setAttribute("a_message","用户名或密码错误！！");
                 resp.sendRedirect("admin/login.jsp");
                 break;
             case "医生":
@@ -57,7 +57,7 @@ public class Login extends HttpServlet {
                         return;
                     }
                 }
-                req.getSession().setAttribute("message","用户名或密码错误！！");
+                req.getSession().setAttribute("d_message","用户名或密码错误！！");
 //                req.getRequestDispatcher("doctor/login.jsp").forward(req,resp);
                 resp.sendRedirect("doctor/login.jsp");
                 break;

@@ -43,7 +43,7 @@
                         帐号指南 <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#howlogin" data-toggle="tab">如何登陆</a></li>
+                        <li><a href="#howlogin" data-toggle="tab">如何登录</a></li>
                     </ul>
                 </li>
             </ul>
