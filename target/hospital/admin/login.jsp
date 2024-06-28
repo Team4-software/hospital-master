@@ -327,6 +327,9 @@
                 <button type="submit" class="btn" id="btn">立即登录</button>
             </div>
         </form>
+        <div class="bottom-links">
+            <a href="<%=request.getContextPath()%>/">首页</a>
+        </div>
     </div>
 </div>
 <script>
